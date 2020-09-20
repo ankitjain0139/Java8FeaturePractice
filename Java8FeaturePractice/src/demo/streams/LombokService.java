@@ -9,7 +9,9 @@ public class LombokService {
 		lombokTest.setId(1);
 		lombokTest.setName("ankit");
 		
-		System.out.println("id :"+lombokTest.getId() + " & " +" name :"+lombokTest.getName());
+		
+		
+		//System.out.println("id :"+lombokTest.getId() + " & " +" name :"+lombokTest.getName());
 		
 	}
 
