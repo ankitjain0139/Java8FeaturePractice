@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -32,6 +33,11 @@ public class MapAndFlatMapDemo {
 		List<Integer> numsUsingFlatMap = namesAndNums.values().stream().flatMap(Collection :: stream).collect(Collectors.toList());
 		System.out.println("using flat map---");
 		numsUsingFlatMap.forEach(System.out :: println);
+		
+		//get all keys
+		Set<String> allNames = namesAndNums.keySet().stream().map(keys -> keys).collect(Collectors.toSet());
+		System.out.println("all keys ie names----");
+		allNames.forEach(System.out :: println);
 
 	}
 
