@@ -1,6 +1,6 @@
 package demo.multithreading;
 
-public class ThreadUsingLambda {
+public class ThreadUsingRunnable {
 	public static void main(String[] args) {
 		
 		//1st way
